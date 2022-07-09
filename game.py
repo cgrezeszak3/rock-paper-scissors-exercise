@@ -1,8 +1,9 @@
 # this is the "game.py" file...
 
-print("Rock, Paper, Scissors, Shoot!")
+print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
+print("-------------------")
 
-x = input("Please input your play (rock paper or scissors):")
+x = input("Please choose either 'rock', 'paper', or 'scissors':")
 
 if x not in ["rock","paper","scissors"]:
     print("Invalid input. Please try again")
@@ -12,8 +13,8 @@ import random
 
 y = random.choice(["rock","paper","scissors"])
 
-print("My Choice =", x)
-print("Computer Choice =", y)
+print("You Chose =", x)
+print("Computer Choses =", y)
 
 if x == "rock" and y == "rock":
     print("TIE GAME")
@@ -35,3 +36,5 @@ elif x == "paper" and y == "scissors":
     print("COMPUTER WINS")
 else:
     print("TRY AGAIN")
+
+print("Thanks for playing. Please play again!")
