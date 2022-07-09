@@ -4,6 +4,10 @@ print("Rock, Paper, Scissors, Shoot!")
 
 x = input("Please input your play (rock paper or scissors):")
 
+if x not in ["rock","paper","scissors"]:
+    print("Invalid input. Please try again")
+    quit()
+
 import random
 
 y = random.choice(["rock","paper","scissors"])
