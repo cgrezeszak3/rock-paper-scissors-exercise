@@ -10,12 +10,16 @@ if x not in ["rock","paper","scissors"]:
     print("Invalid input. Please try again")
     quit()
 
+print("-------------------")
+
 import random
 
 y = random.choice(["rock","paper","scissors"])
 
 print("You Chose =", x)
 print("Computer Choses =", y)
+
+print("-------------------")
 
 if x == "rock" and y == "rock":
     print("TIE GAME")
@@ -37,5 +41,7 @@ elif x == "paper" and y == "scissors":
     print("COMPUTER WINS")
 else:
     print("TRY AGAIN")
+
+print("-------------------")
 
 print("Thanks for playing. Please play again!")
