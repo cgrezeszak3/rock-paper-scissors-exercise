@@ -3,24 +3,29 @@
 print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
 print("-------------------")
 
+# USER INPUTS
 x = input("Please choose either 'rock', 'paper', or 'scissors':")
 x = x.lower() 
 
 print("-------------------")
 
+# VALIDATE USER INPUTS
 if x not in ["rock","paper","scissors"]:
     print("Invalid input. Please try again")
     quit()
 
+# COMPUTER CHOICE
 import random
 
 y = random.choice(["rock","paper","scissors"])
 
+# DISPLAY RESULTS
 print("You Chose =", x)
 print("Computer Choses =", y)
 
 print("-------------------")
 
+# DETERMINE A WINNER
 if x == "rock" and y == "rock":
     print("TIE GAME")
 elif x == "paper" and y == "paper":

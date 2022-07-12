@@ -18,7 +18,7 @@ Then, run the python file by using the command
 python game.py
 ```
 ## Game Play
-When prompted by the game, enter in your pla, which can be either rock, paper, or scissors and then hit enter.
+When prompted by the game, enter in your play, which can be either rock, paper, or scissors and then hit enter.
 
 ## Game Results
 If your play input was a valid option for the game, the game will display your choice, the computer's choice, and which player won the game.
