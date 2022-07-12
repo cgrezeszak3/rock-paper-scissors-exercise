@@ -2,21 +2,21 @@
 
 ## Environment Setup
 When opening the code for the first time only, create a new conda environment by using the below command on the command line
-
+```sh
 conda -n my-gam-env python=3.8
-
+```
 This command will create the new environment and install python 3.8 as the python version for the python files in the environment to run off of
 
 Once the environment is created or if this is not the first time opening the code file, use the command
-
+```sh
 conda activate my-game-env
-
+```
 to activate the new environment that you just created.
 
 Then, run the python file by using the command
-
+```sh
 python game.py
-
+```
 ## Game Play
 When prompted by the game, enter in your pla, which can be either rock, paper, or scissors and then hit enter.
 
