@@ -6,11 +6,11 @@ print("-------------------")
 x = input("Please choose either 'rock', 'paper', or 'scissors':")
 x = x.lower() 
 
+print("-------------------")
+
 if x not in ["rock","paper","scissors"]:
     print("Invalid input. Please try again")
     quit()
-
-print("-------------------")
 
 import random
 
