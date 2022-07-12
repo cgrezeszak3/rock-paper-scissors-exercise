@@ -4,6 +4,7 @@ print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
 print("-------------------")
 
 x = input("Please choose either 'rock', 'paper', or 'scissors':")
+x = x.lower() 
 
 if x not in ["rock","paper","scissors"]:
     print("Invalid input. Please try again")
