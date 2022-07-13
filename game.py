@@ -6,47 +6,47 @@ print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
 print("-------------------")
 
 # USER INPUTS
-x = input("Please choose either 'rock', 'paper', or 'scissors':")
-x = x.lower() 
-
+player_choice = input("Please choose either 'rock', 'paper', or 'scissors':")
+player_choice = player_choice.lower() 
+valid_options = ["rock","paper","scissors"]
 print("-------------------")
 
 # VALIDATE USER INPUTS
-if x not in ["rock","paper","scissors"]:
+if player_choice not in valid_options:
     print("Invalid input. Please try again")
     quit()
 
 # COMPUTER CHOICE
 
-y = random.choice(["rock","paper","scissors"])
+computer_choice = random.choice(valid_options)
 
 # DISPLAY RESULTS
-print("You Chose =", x)
-print("Computer Choses =", y)
+print("You Chose =", player_choice)
+print("Computer Choses =", computer_choice)
 
 print("-------------------")
 
 # DETERMINE A WINNER
-if x == "rock" and y == "rock":
+if player_choice == "rock" and computer_choice == "rock":
     print("TIE GAME")
-elif x == "paper" and y == "paper":
+elif player_choice == "paper" and computer_choice == "paper":
     print("TIE GAME")
-elif x == "scissors" and y == "scissors":
+elif player_choice == "scissors" and computer_choice == "scissors":
     print("TIE GAME")
-elif x == "rock" and y == "scissors":
-    print("YOU WIN")
-elif x == "paper" and y == "rock":
-    print ("YOU WIN")
-elif x == "scissors" and y == "paper":
-    print("YOU WIN")
-elif x == "rock" and y == "paper":
-    print("COMPUTER WINS")
-elif x == "scissors" and y == "rock":
-    print("COMPUTER WINS")
-elif x == "paper" and y == "scissors":
-    print("COMPUTER WINS")
+elif player_choice == "rock" and computer_choice == "scissors":
+    print("ROCK CRUSHES SCISSORS. YOU WIN!")
+elif player_choice == "paper" and computer_choice == "rock":
+    print ("PAPER COVERS ROCK. YOU WIN!")
+elif player_choice == "scissors" and computer_choice == "paper":
+    print("SCISSORS CUT PAPER. YOU WIN!")
+elif player_choice == "rock" and computer_choice == "paper":
+    print("PAPER COVERS ROCK. COMPUTER WINS :(")
+elif player_choice == "scissors" and computer_choice == "rock":
+    print("ROCK CRUSHES SCISSORS. COMPUTER WINS :(")
+elif player_choice == "paper" and computer_choice == "scissors":
+    print("SCISSORS CUT PAPER. COMPUTER WINS :(")
 else:
-    print("TRY AGAIN")
+    print("COMBINATION NOT FOUND")
 
 print("-------------------")
 
