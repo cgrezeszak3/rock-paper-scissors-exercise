@@ -1,5 +1,7 @@
 # this is the "game.py" file...
 
+import random
+
 print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
 print("-------------------")
 
@@ -15,7 +17,6 @@ if x not in ["rock","paper","scissors"]:
     quit()
 
 # COMPUTER CHOICE
-import random
 
 y = random.choice(["rock","paper","scissors"])
 
